@@ -1,9 +1,11 @@
 import React from 'react';
-import {Route, Routes, BrowserRouter as Router} from 'react-router-dom'
-import Header from '../Header';
-import Footer from '../Footer';
+
+import {Route, Routes, BrowserRouter as Router} from 'react-router-dom';
+
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 import Home from '../pages/Home';
-import { Container, StyledRoutes } from './styles';
+import { Container  } from './styles';
 
 
 const App = () => {

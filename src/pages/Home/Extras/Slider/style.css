@@ -1,0 +1,7 @@
+.swiper-pagination-bullets{
+   display: flex;
+}
+
+.swiper-pagination-bullet-active{
+   background-color: #242424;
+}

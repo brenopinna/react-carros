@@ -1,6 +1,6 @@
 import React from 'react';
 import Links from '../Links';
-import { Container, Copyright, ResponsiveFooter, HasFooter } from './styles';
+import { Container, Copyright, ResponsiveFooter } from './styles';
 
 const Footer = ({ links }) => {
    return (
