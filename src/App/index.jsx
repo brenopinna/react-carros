@@ -5,6 +5,7 @@ import {Route, Routes, BrowserRouter as Router} from 'react-router-dom';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Home from '../pages/Home';
+import NotFound from '../pages/NotFound'
 import { Container  } from './styles';
 
 
@@ -17,23 +18,19 @@ const App = () => {
         <Header links={links}/>
         <Routes>
           <Route
-            className='route'
             path='/*'
-            element={<h1>404</h1>}
+            element={<NotFound />}
           />
           <Route
-            className='route'
             path='/'
             exact
             element={<Home />}
           />
           <Route
-            className='route'
             path='/venda'
             element={<h1>venda</h1>}
           />
           <Route
-            className='route'
             path='/sobre'
             element={<h1>sobre</h1>}
           />
