@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Container, LineDraw, Text } from './styles.js'
 
-const Line = ({ children }) => {
+const Line = ({ children, first }) => {
    return (  
-      <Container>
+      <Container style={{marginTop: first ? 80 : 0}}>
          <LineDraw />
          <Text>{children}</Text>
       </Container>

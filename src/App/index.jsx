@@ -6,6 +6,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound'
+import Venda from '../pages/Venda';
 import { Container  } from './styles';
 
 
@@ -28,7 +29,7 @@ const App = () => {
           />
           <Route
             path='/venda'
-            element={<h1>venda</h1>}
+            element={<Venda />}
           />
           <Route
             path='/sobre'
