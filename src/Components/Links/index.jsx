@@ -11,6 +11,7 @@ function Links({ links }) {
                <LinkContainer key={link}>
                   <NavLink
                      to={link === 'home' ? '/' : `/${link}`}
+                     onClick={() => window.scroll(0)}
                   >
                      {link}
                   </NavLink>
