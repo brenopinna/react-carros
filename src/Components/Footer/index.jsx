@@ -1,13 +1,14 @@
 import React from 'react';
+import Contact from '../Contact';
 import Links from '../Links';
-import { Container, Copyright, ResponsiveFooter } from './styles';
+import { Container, ResponsiveFooter } from './styles';
 
 const Footer = ({ links }) => {
    return (
       <Container>
          <ResponsiveFooter>
-            <Links links={links} />
-            <Copyright>Todos os direitos reservados</Copyright>
+            <Contact />
+            <Links links={links} column />
          </ResponsiveFooter>
       </Container>
    );

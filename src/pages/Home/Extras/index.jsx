@@ -29,7 +29,7 @@ const Extras = () => {
                <li>Venda</li>
                <li>Consignação</li>
                <li>Consultoria de Veículos</li>
-               <li>Indicação de mecânicos e peçcas</li>
+               <li>Indicação de mecânicos e peças</li>
             </ul>
             <Button>Saiba Mais</Button>
          </Servicos>

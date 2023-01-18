@@ -13,19 +13,17 @@ export const Container = styled.footer`
    }
 `;
 
-export const Copyright = styled.p`
-   font-style: italic;
-`;
-
 export const ResponsiveFooter = styled(ResponsiveContainer)`
    display: flex;
+   flex-direction: row-reverse;
    justify-content: space-between;
    align-items: center;
    gap: 20px;
    padding-top: 40px;
    padding-bottom: 40px;
 
-   @media screen and (max-width: 620px){
+   @media screen and (max-width: 800px){
       flex-direction: column;
+      gap: 80px;
    }
 `;

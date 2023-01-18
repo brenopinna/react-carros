@@ -1,29 +1,28 @@
 import React from 'react';
-import Line from '../Line';
 import { Button } from '../Button/styles';
-import { ResponsiveContact, Grid, FormInput, Textarea } from './styles';
+import { Flex, Grid, Form, FormInput, Textarea, FormTitle } from './styles';
 
 const Contact = () => {
    return (
-      <ResponsiveContact>
-         <Line>Contato</Line>
-         <form 
-            onSubmit={e => {
-               e.preventDefault();
-               alert('O formulário é só de enfeite!!');
-               e.target.reset()
-            }}
-            style={{textAlign:'center'}}
-         >
-            <Grid>
-               <FormInput placeholder='Nome' />
-               <FormInput placeholder='Email' type='email' grid={'1/2'} />
-               <FormInput placeholder='Telefone' type='tel' grid={'2/3'} />
-               <Textarea placeholder='Mensagem'/>
-            </Grid>
-            <Button>Enviar</Button>
-         </form>
-      </ResponsiveContact>
+         <Flex>
+            <FormTitle>Entre em Contato</FormTitle>
+            <Form
+               onSubmit={e => {
+                  e.preventDefault();
+                  alert('O formulário é só de enfeite!!');
+                  e.target.reset()
+               }}
+               style={{textAlign:'center'}}
+            >
+               <Grid>
+                  <FormInput placeholder='Nome' />
+                  <FormInput grid='1/4' placeholder='Email' type='email' />
+                  <FormInput grid='4/6' placeholder='Telefone' type='tel' />
+                  <Textarea placeholder='Mensagem'/>
+               </Grid>
+               <Button>Enviar</Button>
+            </Form>
+         </Flex>
    );
 }
 

@@ -3,7 +3,6 @@ import { Container } from './styles';
 import Banner from './Banner';
 import Destaque from './Destaque';
 import Extras from './Extras';
-import Contact from '../../Components/Contact';
 
 const Home = () => {
    return (
@@ -11,7 +10,6 @@ const Home = () => {
          <Banner />
          <Destaque />
          <Extras />
-         <Contact />
       </Container>
    );
 }
