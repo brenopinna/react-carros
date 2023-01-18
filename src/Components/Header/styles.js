@@ -3,7 +3,7 @@ import { ResponsiveContainer } from "../ResponsiveContainer/styles";
 
 export const Container = styled.header`
    border-bottom: 3px solid #eb2d2d;
-   font-size: 1.8em;
+   font-size: 1.6em;
    
    & a{
       color: black;
@@ -21,4 +21,8 @@ export const ResponsiveHeader = styled(ResponsiveContainer)`
       flex-direction: column;
       gap: 20px;
    }
+`;
+
+export const Logo = styled.img`
+   height: 65px;
 `;
