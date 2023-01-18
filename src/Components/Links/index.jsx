@@ -9,12 +9,17 @@ function Links({ links }) {
             {links.map(link => {
                return (
                <LinkContainer key={link}>
-                  <NavLink
-                     to={link === 'home' ? '/' : `/${link}`}
-                     onClick={() => window.scroll(0)}
-                  >
-                     {link}
-                  </NavLink>
+                  {
+                     link !== 'contato' ?
+                     <NavLink
+                        to={link === 'home' ? '/' : `/${link}`}
+                        onClick={() => window.scroll(0)}
+                     >
+                        {link}
+                     </NavLink> :
+                     <a href='#contato'>Contato</a>
+                  }
+                  
                </LinkContainer>
                )
             })}

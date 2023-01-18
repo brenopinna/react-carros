@@ -4,7 +4,7 @@ import { Flex, Grid, Form, FormInput, Textarea, FormTitle } from './styles';
 
 const Contact = () => {
    return (
-         <Flex>
+         <Flex id='contato'>
             <FormTitle>Entre em Contato</FormTitle>
             <Form
                onSubmit={e => {
