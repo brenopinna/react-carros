@@ -11,7 +11,7 @@ const Car = ({ carInfo }) => {
          <Image src={image} alt={name}/>
          <Name>{name}</Name>
          <p>{description}</p>
-         <Button onClick={() => navigate(`/car/${id}`)}>Mais Detalhes</Button>
+         <Button onClick={() => {navigate(`/car/${id}`); window.scrollTo(0, 0);}}>Mais Detalhes</Button>
       </Container>
    );
 }

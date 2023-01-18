@@ -13,7 +13,7 @@ function Links({ links }) {
                      link !== 'contato' ?
                      <NavLink
                         to={link === 'home' ? '/' : `/${link}`}
-                        onClick={() => window.scroll(0)}
+                        onClick={() => window.scrollTo(0, 0)}
                      >
                         {link}
                      </NavLink> :
