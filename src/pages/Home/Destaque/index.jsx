@@ -12,7 +12,7 @@ const Destaque = () => {
       <ResponsiveContainer>
          <Line>Veículos em Destaque</Line>
          <CarsContainer>
-            {cars.map(car => <Car carInfo={car} />)}
+            {cars.map((car, index) => <Car key={index} carInfo={car} />)}
          </CarsContainer>
       </ResponsiveContainer>
    );
