@@ -9,9 +9,7 @@ const Cars = ({value}) => {
    const cars = [...allCars()]
    return (
       <Container>
-         {cars.map(car => {
-            if(car.price <= value) return <Car img={car.image} name={car.name} description={car.description} price={car.price} />
-         })}
+         {cars.filter(car => car.price <= value).map(car => <Car carInfo={car} />)}
       </Container>
    );
 }

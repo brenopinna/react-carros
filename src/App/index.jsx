@@ -8,10 +8,11 @@ import Home from '../pages/Home';
 import NotFound from '../pages/NotFound'
 import Venda from '../pages/Venda';
 import { Container  } from './styles';
+import CarSingle from '../pages/CarSingle';
 
 
 const App = () => {
-  const links = ['home', 'venda', 'sobre'];
+  const links = ['home', 'venda'];
 
   return (
     <Router>
@@ -32,8 +33,8 @@ const App = () => {
             element={<Venda />}
           />
           <Route
-            path='/sobre'
-            element={<h1>sobre</h1>}
+            path='/car/:carId'
+            element={<CarSingle />}
           />
         </Routes>
         <Footer links={links}/>

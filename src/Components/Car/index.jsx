@@ -1,14 +1,17 @@
 import React from 'react';
 import { Button } from '../Button/styles'
 import { Container, Image, Name } from './styles';
+import { useNavigate } from 'react-router-dom';
 
-const Car = ({img, name, description}) => {
+const Car = ({ carInfo }) => {
+   const navigate = useNavigate();
+   const {image, name, description, id} = carInfo;
    return (
       <Container>
-         <Image src={img} alt={name}/>
+         <Image src={image} alt={name}/>
          <Name>{name}</Name>
          <p>{description}</p>
-         <Button>Mais Detalhes</Button>
+         <Button onClick={() => navigate(`/car/${id}`)}>Mais Detalhes</Button>
       </Container>
    );
 }
