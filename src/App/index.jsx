@@ -12,7 +12,7 @@ import CarSingle from '../pages/CarSingle';
 
 
 const App = () => {
-  const links = ['home', 'venda'];
+  const links = ['home', 'venda', 'contato'];
 
   return (
     <Router>

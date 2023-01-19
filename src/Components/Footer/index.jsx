@@ -8,7 +8,7 @@ const Footer = ({ links }) => {
       <Container>
          <ResponsiveFooter>
             <Contact />
-            <Links links={links} column />
+            <Links links={links} />
          </ResponsiveFooter>
       </Container>
    );

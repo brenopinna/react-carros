@@ -9,7 +9,7 @@ const Header = ({ links }) => {
       <Container>
          <ResponsiveHeader>
             <Logo src={logo} alt='logo' />
-            <Links links={links.concat('contato')}/>
+            <Links showContact links={links}/>
          </ResponsiveHeader>
       </Container>
    );
